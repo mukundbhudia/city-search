@@ -1,6 +1,7 @@
 <?php
+require_once "File.php";
 
-class HttpFile {
+class HttpFile implements File {
 
     protected $url;
 
