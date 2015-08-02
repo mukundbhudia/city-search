@@ -1,10 +1,13 @@
 <?php
 
 require_once 'src/HttpFile.php';
+require_once 'src/CityBuilder.php';
 
 define("weatherURL", "http://openweathermap.org/help/city_list.txt");
 
 $test = new HttpFile(weatherURL);
+$cities = new CityBuilder($test->getContent());
+print_r($cities->getCities());
 
 // print_r($test->getContent());
 
