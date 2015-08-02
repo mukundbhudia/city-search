@@ -1,6 +1,6 @@
 <?php
 
-require_once 'HttpFile.php';
+require_once 'src/HttpFile.php';
 
 define("weatherURL", "http://openweathermap.org/help/city_list.txt");
 
