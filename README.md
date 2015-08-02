@@ -14,7 +14,7 @@ Gets a txt document of ~70,000 cities, processes it, stores it, and allows it to
 
 ### How do I get set up? ###
 
-* Clone the repo
+* `git clone https://mbhudia@bitbucket.org/mbhudia/city-search.git` the repo
 * Point your php installation to the project directory
 
 ### How to test? ###
