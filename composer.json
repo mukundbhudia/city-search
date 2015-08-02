@@ -1,0 +1,13 @@
+{
+    "name": "mb/mukundbhudia",
+    "description": "Gets some city data, and allows you to search it",
+    "authors": [
+        {
+            "name": "Mukund Bhudia",
+            "email": "mukund.bhudia@hotmail.co.uk"
+        }
+    ],
+    "require": {
+        "phpunit/phpunit": "~4.7"
+    }
+}
