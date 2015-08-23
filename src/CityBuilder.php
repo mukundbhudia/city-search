@@ -22,7 +22,7 @@ class CityBuilder {
         $lines = explode(PHP_EOL, $this->content);
         foreach($lines as $line) {
             //Make sure we ignore the header of the file
-            if ($line != "id	nm	lat	lon	countryCode") {
+            if ($line != "id	nm	lat	lon	countryCode" && $line != "") {
                 $this->cityArray[] = new City($line);
             }
         }
