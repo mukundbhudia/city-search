@@ -23,7 +23,28 @@ class CityBuilderTest extends PHPUnit_Framework_TestCase {
 
         $cities = new CityBuilder($cityData);
 
-        $this->assertEquals(10, $cities->getCities());
+        $this->assertEquals(10, count($cities->getCitiesDetails()));
+    }
+
+    public function testItCanIgnoreHeaderData() {
+        //TODO: Need to move to a test setup
+        $cityData = 'id	nm	lat	lon	countryCode
+        819827	Razvilka	55.591667	37.740833	RU
+        524901	Moscow	55.752220	37.615555	RU';
+
+        $cities = new CityBuilder($cityData);
+
+        $this->assertEquals(2, count($cities->getCitiesDetails()));
+    }
+
+    public function testItCanDiscountHeaderData() {
+        //TODO: Need to move to a test setup
+        $cityData = '819827	Razvilka	55.591667	37.740833	RU
+        524901	Moscow	55.752220	37.615555	RU';
+
+        $cities = new CityBuilder($cityData);
+
+        $this->assertEquals(2, count($cities->getCitiesDetails()));
     }
 
 }
