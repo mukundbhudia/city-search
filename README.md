@@ -16,6 +16,7 @@ Gets a txt document of ~70,000 cities, processes it, stores it, and allows it to
 
 * `git clone https://mbhudia@bitbucket.org/mbhudia/city-search.git` the repo
 * Point your php installation to the project directory
+* Run `composer install`
 
 ### How to test? ###
 You'll need phpunit installed. Then cd to the directory of the project and run
